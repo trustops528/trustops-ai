@@ -1,0 +1,48 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python and test output
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# JavaScript and frontend output
+node_modules/
+.next/
+out/
+.turbo/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Local data and generated output
+datasets/source/**
+datasets/processed/**
+datasets/labels/**
+datasets/splits/**
+!datasets/source/.gitkeep
+!datasets/processed/.gitkeep
+!datasets/labels/.gitkeep
+!datasets/splits/.gitkeep
+artifacts/**
+!artifacts/README.md
+!artifacts/**/
+!artifacts/**/.gitkeep
+mlruns/
+mlartifacts/
+*.db
+*.sqlite3
