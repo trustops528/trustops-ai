@@ -1,0 +1,11 @@
+version: 2
+
+updates:
+  # Follow the documented PR-to-main workflow (the default branch).
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
